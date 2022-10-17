@@ -1,0 +1,12 @@
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.card-img-top {
+  height: 180px !important;
+  object-fit: cover;
+}

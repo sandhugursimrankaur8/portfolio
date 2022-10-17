@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/header'); %>
+  <body>
+    <%- include('partials/navbar'); %>
+    <div class="container">
+      <section class="contact py-5" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 mr-lg-5 col-12">
+              <div class="google-map w-100">
+                <div style="width: 100%">
+                  <iframe
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    width="400"
+                    height="300"
+                    frameborder="0"
+                    style="border: 0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="contact-form">
+                <h2 class="mb-4">Drop a message!</h2>
+
+                <form action="/" method="get">
+                  <div class="row">
+                    <div class="col my-2 col-12 col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="First Name"
+                        id="fname"
+                      />
+                    </div>
+                    <div class="col my-2 col-12 col-lg-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Last Name"
+                        id="lname"
+                      />
+                    </div>
+
+                    <div class="col col-12 my-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="number"
+                        placeholder="Contact number"
+                        id="number"
+                      />
+                    </div>
+
+                    <div class="col col-12 my-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Email"
+                        id="email"
+                      />
+                    </div>
+
+                    <div class="col col-12 my-2">
+                      <textarea
+                        name="message"
+                        rows="6"
+                        class="form-control"
+                        id="message"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+
+                    <div class="ml-lg-auto my-2 col-12">
+                      <input
+                        type="submit"
+                        class="form-control w-100 d-block btn btn-dark"
+                        value="Send Message"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
