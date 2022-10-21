@@ -10,3 +10,8 @@ body {
   height: 180px !important;
   object-fit: cover;
 }
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+}

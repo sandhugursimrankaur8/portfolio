@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/header'); %>
+  <body>
+    <%- include('partials/navbar'); %>
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <form
+        action="/dashboard/add-contact"
+        method="POST"
+        class="form w-100 mshadow p-4 border rounded"
+      >
+        <h1 class="mb-4"><%= title%> a contact</h1>
+
+        <!-- messages -->
+        <% if(messages.success) { %>
+        <div
+          class="alert alert-success alert-dismissible fade show"
+          role="alert"
+        >
+          <%= messages.success %>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+        <% } %> <% if(messages.error) { %>
+        <div
+          class="alert alert-danger alert-dismissible fade show"
+          role="alert"
+        >
+          <%= messages.error %>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+        <% } %>
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Contact Name</label>
+          <input
+            type="name"
+            name="name"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Contact Email address</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Contact Number</label>
+          <input
+            type="number"
+            name="number"
+            class="form-control"
+            id="number"
+            placeholder="Enter number"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-dark">Add contact</button>
+      </form>
+    </div>
+  </body>
+</html>

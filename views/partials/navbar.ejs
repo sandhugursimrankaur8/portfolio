@@ -44,6 +44,23 @@
             >Contact</a
           >
         </li>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= title === 'Dashboard' && 'active' %>"
+            href="/dashboard"
+            >Dashboard</a
+          >
+        </li>
+
+        <%if (!user) { %>
+        <li class="nav-item">
+          <a class="nav-link <%= title === 'Login' && 'active' %>" href="/login"
+            >Login</a
+          >
+        </li>
+        <% }else{ %>
+        <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+        <%}%>
       </ul>
     </div>
   </div>
